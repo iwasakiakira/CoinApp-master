@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoinApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8So-ns-ALI">
+                                <rect key="frame" x="0.0" y="626" width="414" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="1lu-mU-3rK"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RR0-WG-bPo">
+                                <rect key="frame" x="20" y="104" width="374" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="NTC-dn-u9k">
+                                        <rect key="frame" x="15" y="0.0" width="344" height="100"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xF-SO-67v">
+                                                <rect key="frame" x="0.0" y="0.0" width="197" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq8-n4-gSi">
+                                                <rect key="frame" x="211" y="0.0" width="59.5" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP4-vb-wzt">
+                                                <rect key="frame" x="284.5" y="0.0" width="59.5" height="100"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3Tp-VL-eeD"/>
+                                    <constraint firstAttribute="bottom" secondItem="NTC-dn-u9k" secondAttribute="bottom" id="CKd-LM-us3"/>
+                                    <constraint firstItem="NTC-dn-u9k" firstAttribute="top" secondItem="RR0-WG-bPo" secondAttribute="top" id="RnG-Us-pd9"/>
+                                    <constraint firstItem="NTC-dn-u9k" firstAttribute="leading" secondItem="RR0-WG-bPo" secondAttribute="leading" constant="15" id="iCz-QU-EdH"/>
+                                    <constraint firstAttribute="trailing" secondItem="NTC-dn-u9k" secondAttribute="trailing" constant="15" id="zfn-sZ-OKU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RR0-WG-bPo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="15h-fJ-xTg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RR0-WG-bPo" secondAttribute="trailing" constant="20" id="5nH-x7-MvV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8So-ns-ALI" secondAttribute="bottom" constant="20" id="6Us-kh-BXP"/>
+                            <constraint firstItem="8So-ns-ALI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MOT-oX-b96"/>
+                            <constraint firstItem="RR0-WG-bPo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tof-YT-pZF"/>
+                            <constraint firstItem="RR0-WG-bPo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vib-JW-PyD"/>
+                            <constraint firstItem="8So-ns-ALI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kfk-Ve-Ct6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coinLabel" destination="Zq8-n4-gSi" id="Rwj-ZH-QNX"/>
+                        <outlet property="currencyLabel" destination="HP4-vb-wzt" id="mm1-bn-N0b"/>
+                        <outlet property="currencyPicker" destination="8So-ns-ALI" id="hca-36-twe"/>
+                        <outlet property="virtualCurrencyLabel" destination="9xF-SO-67v" id="LA2-32-e6V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-367"/>
+        </scene>
+    </scenes>
+</document>
